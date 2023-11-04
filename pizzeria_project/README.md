@@ -8,7 +8,7 @@ This project is a web-based application for managing a pizza orders, allowing cu
 
 - Order pizza with customizable options for base, cheese, and toppings.
 - Real-time tracking of order status.
-- Asynchronous task management using Celery. IAC COIENC
+- Asynchronous task management using Celery.
 - Docker containerization for easy deployment.
 ```
 ## Installation
