@@ -24,16 +24,15 @@ This project is a web-based application for managing a pizza orders, allowing cu
    ```
 
 3. Keep Docker app open so docker can pick the docker commands
-
-## Usage
-
-1. Start the Docker containers.
+4. Start the Docker containers.
    ```bash
    docker-compose up
    ```
 
-2. Access the application at [http://localhost:8000](http://localhost:8000).
-3. For Creating an order [http://localhost:8000/create_order](http://localhost:8000/create_order).
+## Usage
+
+1. Access the application at [http://localhost:8000](http://localhost:8000).
+2. For Creating an order [http://localhost:8000/create_order](http://localhost:8000/create_order).
    here add the order in json format pizzas can have multiple entries in single order
    ```json
    {
@@ -72,7 +71,7 @@ create_order on successfully placing an order will give following response with 
        "order_id": 36
    }
    ```
-4. For Tracking an order [http://localhost:8000/track_order/order_id/](http://localhost:8000/track_order/order_id/)  Place an integer order_id you got as a response of creating an order.
+3. For Tracking an order [http://localhost:8000/track_order/order_id/](http://localhost:8000/track_order/order_id/)  Place an integer order_id you got as a response of creating an order.
    status will change like this
    ```bash
    Placed--->10sec gap--->Accepted--->50sec gap--->Preparing--->120sec gap--->Dispatched--->120sec gap--->Delivered
